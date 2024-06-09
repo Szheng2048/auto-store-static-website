@@ -1,0 +1,89 @@
+:root{
+    overflow-x: hidden;
+}
+.header{
+    display:flex;
+    flex-direction: column;
+    width:100vw;
+    margin-left: 0;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.navBar {
+    height: 75px;
+    background-color: rgb(10, 10, 148);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+.h1-logo {
+    padding: 20px;
+}
+.h1-logo a {
+    text-decoration: none;
+    color: white;
+}
+.h1-logo h1 {
+    font-size: 20px;
+}
+div ul {
+    padding: 40px;
+}
+div ul li {
+    display: inline-block;
+}
+div ul li a {
+    text-decoration: none;
+    color: white;
+}
+.selected {
+    border-bottom: 1px solid white;
+}
+
+.active{
+    border-bottom: 1px solid white;
+}
+
+.right-side-nav ul {
+    display: flex;
+}
+
+.right-side-nav ul li:not(:last-child) {
+    margin-right: 15px;
+}
+
+.mainFrame{
+    background-color:#191919;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 700px;
+}
+
+.navigation{
+    height: 75px;
+    background-color: rgb(10, 10, 148);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    text-align: center;
+}
+.space{
+    width: 10px;
+    margin:10px;
+}
+a {
+    font-weight: 500;
+    color: whitesmoke;
+    text-decoration: inherit;
+}
+a:hover {
+    color: #535bf2;
+}

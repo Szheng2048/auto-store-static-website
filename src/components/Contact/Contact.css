@@ -1,0 +1,63 @@
+.contactPage{
+    background-color: blue;
+}
+
+.splitScreens{
+    display: flex;
+    flex-direction: row;
+    margin-top:600px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: blue;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contactDiv{
+    background-color: white;
+    padding-top: 5px;
+    width: 23%;
+    margin:5px;
+    border-radius: 10px;
+    height:170px;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.contactDescription{
+    font-weight: bold;
+}
+
+.logos{
+    height:50px;
+    width:50px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .splitScreens{
+        margin-top: 620px;
+    }
+    .contactDiv{
+        width: 45%;
+        margin:10px;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .splitScreens{
+        margin-top: 550px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .splitScreens{
+        margin-top: 500px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .splitScreens{
+        margin-top: 480px;
+    }
+}
