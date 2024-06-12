@@ -96,6 +96,11 @@
 }
 @media screen and (max-width: 450px) {
     .splitScreen{
-        margin-top: 400px;
+        margin-top: 500px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .splitScreen{
+        margin-top: 445px;
     }
 }

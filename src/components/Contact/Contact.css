@@ -1,14 +1,16 @@
 .contactPage{
-    background-color: blue;
+    background-color: rgb(10, 10, 148);
+    width:100%;
+    position:absolute;
+    left:0;
+    top:0;
 }
-
 .splitScreens{
     display: flex;
     flex-direction: row;
     margin-top:600px;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: blue;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -24,6 +26,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    z-index: 1;
 }
 .contactDescription{
     font-weight: bold;
@@ -33,7 +36,36 @@
     height:50px;
     width:50px;
 }
+.mailjetContact{
+    margin:20px;
+    height:320px;
+    width: 60%;
+    background-color:rgb(119, 119, 229);
+    border-radius: 5px;
+    margin-top: -40px;
+    padding-top: 30px;
+    z-index: 0;
+    text-align: center;
+}
+.mailjetContact h2 {
+    color: rgb(10, 10, 148);
+}
 
+.mailjetContact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.mailjetContact form input {
+    margin-bottom:20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.mailjetContact form textarea {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -44,6 +76,9 @@
         width: 45%;
         margin:10px;
         border-radius: 10px;
+    }
+    .mailjetContact{
+        margin-top: 40px;
     }
 }
 @media screen and (max-width: 550px) {

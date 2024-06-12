@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import "./Home.css"
 import ReactPlayer from 'react-player'
 import Header from '../common/Header'
+import Contact from '../Contact/Contact'
+
 
 export class Home extends Component {
   render() {
