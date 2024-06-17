@@ -6,30 +6,11 @@ import faxLogo from '../../assets/faxLogo.jpg'
 import locationLogo from '../../assets/locationLogo.jpg'
 import phoneLogo from '../../assets/phoneLogo.jpg'
 import React from 'react'
-import axios from "axios"
-import {isEmail,isEmpty} from 'validator'
-// import sendMail from '../../../../auto-store-website/auto-store-backend/routes/Mailjet/Mailjet.js'
 
 export default function Contact() {
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
-
-    async function handleOnSubmit (e){
-        e.preventDefault()
-        console.log("bhellw")
-        if(!isEmpty(name) && !isEmpty(message) && isEmail(email)){
-            try {
-                console.log("hello")
-                const message =await axios.post("https://127.0.0.1:3000/mailjet/send-message",{recipient:email,message:message})
-                console.log("message sent")
-            } catch (error) {
-                console.log(error)
-            }
-        } else {
-            console.log("incorrect fields")
-        }
-    }
   return (
     <div className='contactPage'>
         <Header/>
@@ -59,7 +40,7 @@ export default function Contact() {
                 <form onSubmit={handleOnSubmit}>
                     <input type="text" name="name" id="name" placeholder='Enter Your Name' value={name} onChange={(e)=>setName(e.target.value)} />
                     <input type="text" name="email" id="email" placeholder='Please Enter Valid Email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
-                    <input name="message" id="message" value={message} onChange={(e)=>{setMessage(e.target.value)}}/>
+                    <textarea name="message" id="message" rows="4" value={message} onChange={(e)=>{setMessage(e.target.value)}}/>
                     <input type="submit" value="Submit" />
                 </form>
             </div>
